@@ -12,6 +12,7 @@ body {
     min-height:100vh;
     background-image: url('../images/road.jpg');
     background-position: center;
+    background-repeat: no-repeat;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -61,4 +62,39 @@ nav li:first-child {
     font-family: "Tangerine", cursive;
     font-weight: 700;
     font-size: 50px;
+}
+
+.toggle-bar {
+    position: fixed;
+    top: 0;
+    right:0;
+    height:100vh;
+    width: 250px;
+    z-index: 999;
+    background-color:rgba(238, 232, 232, 0.719);
+    backdrop-filter: blur(5px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.toggle-bar li {
+    width: 100%; 
+}
+
+.toggle-bar a {
+    width: 100%; 
+    color: black;
+}
+
+.toggle-bar a:hover {
+    background-color:#6b6464;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#svg {
+    fill: #fcfafa;
 }

@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='/css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <title>Sophisticated Wheels</title>
 </head>
 <body>
     <!--Navbar-->
     <header>
         <nav>
-            <ul>
+            <ul class="toggle-bar">
                 <li >
                     <a href="{{ url_for('index') }}">Sophisticated Wheels</a>
                 </li>
@@ -27,13 +26,27 @@
                     <a href="{{ url_for('contact') }}">Contact</a>
                 </li>
             </ul>
+            <ul>
+                <li >
+                    <a href="{{ url_for('index') }}">Sophisticated Wheels</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('index') }}">Home</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('our_fleet') }}">Our Fleet</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('contact') }}">Contact</a>
+                </li>
+                <li>
+                    <a href="#" id="svg"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+                </li>
+            </ul>
         </nav>
     </header>
     {% block content %}
     {% endblock %}
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
 </body>
 </body>
 </html>
