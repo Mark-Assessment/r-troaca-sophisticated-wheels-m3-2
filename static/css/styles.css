@@ -61,10 +61,10 @@ nav li:first-child {
     margin-right:auto;
     font-family: "Tangerine", cursive;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 40px;
 }
 
-.toggle-bar {
+.togglebar {
     position: fixed;
     top: 0;
     right:0;
@@ -80,16 +80,16 @@ nav li:first-child {
     justify-content: flex-start;
 }
 
-.toggle-bar li {
+.togglebar li {
     width: 100%; 
 }
 
-.toggle-bar a {
+.togglebar a {
     width: 100%; 
     color: black;
 }
 
-.toggle-bar a:hover {
+.togglebar a:hover {
     background-color:#6b6464;
     text-decoration: none;
     transition: 0.5s;
@@ -97,4 +97,23 @@ nav li:first-child {
 
 #svg {
     fill: #fcfafa;
+}
+
+.hamburger-button {
+    display: none;
+}
+
+@media (max-width:760px) {
+    .hideOnSmallDevice{
+        display:none;
+    }
+    .hamburger-button {
+        display:block;
+    }
+}
+
+@media (max-width:480px) {
+    .togglebar{
+        width:100%;
+    }
 }
