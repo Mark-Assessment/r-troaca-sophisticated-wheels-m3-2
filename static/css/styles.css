@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,600&family=Libre+Franklin:wght@600&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+/* body */
+* {
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+   }
+
+body {
+    min-height:100vh;
+    background-image: url('../images/road.jpg');
+    background-position: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* navbar */
+
+nav {
+    background-color:#191919;
+}
+
+nav ul {
+    width:100%;
+    list-style:none;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+
+nav li {
+    height:3rem;
+    font-weight:500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    height:100%;
+    padding: 0 2rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color:#fcfafa;
+}
+
+a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: #3c4146
+}
+nav a:hover {
+    background-color:#aca0a0;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+nav li:first-child {
+    margin-right:auto;
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-size: 50px;
+}

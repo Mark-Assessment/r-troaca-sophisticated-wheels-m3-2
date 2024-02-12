@@ -1,6 +1,5 @@
 import os
-from flask import Flask
-
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -11,12 +10,12 @@ def index():
 
 
 @app.route("/our_fleet")
-def index():
+def our_fleet():
     return render_template("our_fleet.html")
 
 
 @app.route("/contact")
-def index():
+def contact():
     return render_template("contact.html")
 
 
