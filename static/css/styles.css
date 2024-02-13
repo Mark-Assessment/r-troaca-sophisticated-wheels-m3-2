@@ -103,7 +103,7 @@ nav li:first-child {
     display: none;
 }
 
-@media (max-width:760px) {
+@media (max-width:976px) {
     .hideOnSmallDevice{
         display:none;
     }
@@ -117,3 +117,43 @@ nav li:first-child {
         width:100%;
     }
 }
+
+/* footer */
+
+footer {
+    position:absolute;
+    bottom: 0; 
+    left: 0; 
+    z-index: 10;
+    margin-top: 100px;
+    width: 100%;
+    padding: 50px 5%;
+    background-color:#191919;
+    color:#fcfafa;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30%;
+    justify-content: space-around;
+}
+
+footer div {
+    text-align: center;
+    justify-content: center;
+}
+
+footer div h3 {
+    margin-bottom: 30px;
+}
+
+footer a {
+    display: block;
+    text-decoration: none;
+    color:#fcfafa;
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+

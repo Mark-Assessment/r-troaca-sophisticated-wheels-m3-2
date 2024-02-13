@@ -20,7 +20,13 @@
                     <a href="{{ url_for('index') }}">Home</a>
                 </li>
                 <li>
+                    <a href="{{ url_for('about') }}">About Us</a>
+                </li>
+                <li>
                     <a href="{{ url_for('our_fleet') }}">Our Fleet</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('sell_car') }}">Sell Your Car</a>
                 </li>
                 <li>
                     <a href="{{ url_for('contact') }}">Contact</a>
@@ -34,7 +40,13 @@
                     <a href="{{ url_for('index') }}">Home</a>
                 </li>
                 <li class="hideOnSmallDevice">
+                    <a href="{{ url_for('about') }}">About Us</a>
+                </li>
+                <li class="hideOnSmallDevice">
                     <a href="{{ url_for('our_fleet') }}">Our Fleet</a>
+                </li>
+                <li class="hideOnSmallDevice">
+                    <a href="{{ url_for('sell_car') }}">Sell Your Car</a>
                 </li>
                 <li class="hideOnSmallDevice">
                     <a href="{{ url_for('contact') }}">Contact</a>
@@ -47,6 +59,25 @@
     </header>
     {% block content %}
     {% endblock %}
-</body>
+    <footer>
+        <div class="col-1">
+            <h3>Useful Links</h3>
+            <a href="#">About Us</a>
+            <a href="#">Our Fleet</a>
+            <a href="#">Sell Your Car</a>
+        </div>
+        <div class="col-2">
+            <h3>Account</h3>
+            <a href="#">Register</a>
+            <a href="#">Log In</a>
+            <a href="#">My Account</a>
+        </div>
+        <div class="col-3">
+            <h3>Contact</h3>
+            <p>0116 234 5678</p>
+            <p>contact@sophisticatedwheels.co.uk</p>
+            <p>High Street, LE1 5EU<br>Leicester, United Kingdom</p>
+        </div>
+    </footer>
 </body>
 </html>
