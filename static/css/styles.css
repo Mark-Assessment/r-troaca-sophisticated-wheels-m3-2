@@ -156,6 +156,10 @@ footer p {
     margin-bottom: 10px;
 }
 
+.footer-text {
+    padding-top: 50px;
+}
+
 /* index.html */
 
 .indexcontainer {
