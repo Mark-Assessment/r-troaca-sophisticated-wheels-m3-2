@@ -168,7 +168,7 @@ footer p {
     padding: 20px 20px;
     border: 2px solid #ddd;
     border-radius: 8px;
-    background-color:rgba(238, 232, 232, 0.419);
+    background-color:rgba(238, 232, 232, 0.719);
     backdrop-filter: blur(3px);
     align-content: center;
     justify-content: center;
@@ -187,3 +187,6 @@ footer p {
     font-weight: 500;
     letter-spacing: 1px;
 }
+
+/* contact */
+
