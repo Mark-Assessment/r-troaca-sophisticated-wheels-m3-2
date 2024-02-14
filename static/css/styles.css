@@ -13,6 +13,7 @@ body {
     background-image: url('../images/road.jpg');
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -122,7 +123,6 @@ nav li:first-child {
 
 footer {
     position:absolute;
-    bottom: 0; 
     left: 0; 
     z-index: 10;
     margin-top: 100px;
@@ -156,4 +156,30 @@ footer p {
     margin-bottom: 10px;
 }
 
+/* index.html */
 
+.indexcontainer {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color:rgba(238, 232, 232, 0.419);
+    backdrop-filter: blur(3px);
+    align-content: center;
+    justify-content: center;
+}
+
+.indexcontainer p {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.indexcontainer ul {
+    padding-left: 15px;
+}
+
+.indexcontainer p, li {
+    font-weight: 500;
+    letter-spacing: 1px;
+}
