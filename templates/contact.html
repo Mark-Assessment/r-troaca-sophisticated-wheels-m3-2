@@ -1,20 +1,86 @@
 {% extends "base.html" %}
 {% block content %}
-<section>
+<section class="contact-section">
+  <div class="section-header">
     <div class="contact-container">
-        <div class="form-container">
-            <h3>Message Us</h3>
-            <form action="" class="contact-form">
-                <input type="text" placeholder="Please enter your Name" required>
-                <input type="email" placeholder="Please enter your email" required>
-                <input type="tel" placeholder="Please enter your phone number" required>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Insert your text" required></textarea>
-                <input type="submit" value="Send" class="sendbtn">
-            </form>
-        </div>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2421.3484114506114!2d-1.138048230756516!3d52.63561810019084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4877611fd5e66ff7%3A0xa362a3b51be66a39!2sHigh%20St%2C%20Leicester!5e0!3m2!1sen!2suk!4v1707941800545!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+      <h2>Contact Us</h2>
+      <p>We are delighted to assist you in exploring the epitome of automotive excellence.
+        Whether you have inquiries about our curated collection of opulent vehicles or require personalized concierge
+        services,
+        our dedicated team is here to ensure your every interaction with Sophisticated Wheels is as exceptional as the
+        cars we showcase.
+        Feel free to reach out using the form below, and let us transform your automotive dreams into a reality.</p>
     </div>
+  </div>
+
+  <div class="contact-container">
+    <div class="row">
+      <div class="contact-info">
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <i class="fas fa-home"></i>
+          </div>
+
+          <div class="contact-info-content">
+            <h4>Address</h4>
+            <p>High Street, LE1 5EU, <br>Leicester, United Kingdom</p>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+
+          <div class="contact-info-content">
+            <h4>Phone</h4>
+            <p>0116 234 5678</p>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+
+          <div class="contact-info-content">
+            <h4>Email</h4>
+            <p>contact@sophisticatedwheels.co.uk</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+
+        <form method="POST" id="contact-form">
+          <h2>Send Message</h2>
+          <div class="input-box">
+            <input type="text" required placeholder="Please enter your full name" name="name" id="name">
+          </div>
+
+          <div class="input-box">
+            <input type="email" required placeholder="Please enter your email address" name="email" id="email">
+          </div>
+
+          <div class="input-box">
+            <textarea required placeholder="What can we help you with?" name="message" id="message"></textarea>
+          </div>
+
+          <div class="input-box">
+            <input type="submit" value="Send" name="">
+          </div>
+
+          {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                <p>{{ message }}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        </form>
+      </div>
+    </div>
+  </div>
 </section>
 {% endblock %}
