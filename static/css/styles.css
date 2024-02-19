@@ -107,7 +107,7 @@ nav li:first-child {
   display: none;
 }
 
-@media (max-width:976px) {
+@media (max-width:1090px) {
   .hideOnSmallDevice {
     display: none;
   }
@@ -386,16 +386,31 @@ input::placeholder {
   flex-wrap: wrap;
 }
 
+.about-reverse {
+  display: flex;
+  flex-direction:row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-reverse img {
+  margin-left: auto;
+}
+
 .about-img {
   flex: 1;
   margin-right: 40px;
+  margin-top: 50px;
 }
 
 .about-img img {
-  max-width: 100%;
+  max-width: 80%;
+  max-height: 80%;
   height: auto;
   display: block;
   transition: 0.5s ease;
+  box-shadow: 5px 5px 10px black;
 }
 
 .about-content {
@@ -418,15 +433,21 @@ input::placeholder {
     padding: 20px;
   }
 
-  .about {
+  .about,
+  .about-reverse {
     padding: 50px;
     flex-direction: column;
+  }
+
+  .about-reverse img {
+    margin-right: auto;
   }
 
   .about-img {
     margin-right: 0px;
     margin-bottom: 40px;
   }
+
 
   .about-content p {
     padding: 0px;

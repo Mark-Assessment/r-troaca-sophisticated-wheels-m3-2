@@ -35,6 +35,20 @@ def contact():
                 request.form.get("name")))
     return render_template("contact.html")
 
+@app.errorhandler(404)
+def page_not_found(e):
+    """
+    On 404 error redirects the user to the 404 page
+    """
+    return render_template('404.html'), 404
+
+@app.errorhandler(500)
+def internal_error(err):
+    """
+    On 500 error redirects the user to the 500 page
+    """
+    return render_template('500.html'), 500
+
 
 if __name__ == "__main__":
     app.run(
