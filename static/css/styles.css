@@ -453,3 +453,52 @@ input::placeholder {
     padding: 0px;
   }
 }
+
+/* 404 page */
+
+.error-page {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 10px 0px 50px;
+}
+
+.error-page h1 {
+  font-size: 4vw;
+  font-weight: 700;
+  color: #fcfafa;
+  text-shadow: 2px 2px black;
+  text-align: center;
+  padding: 80px 20px 20px;
+}
+
+.error-page p {
+  font-size: 3.5vw;
+  font-weight: 700;
+  color: #fcfafa;
+  text-shadow: 2px 2px black;
+  text-align: center;
+  padding: 50px 15px 15px;
+}
+
+.error-page a {
+  font-size: 20px;
+  text-align: center;
+  color: #fcfafa;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+  width: 250px;
+  background: #6b6464;
+  border-radius: 5px;
+  margin: 50px auto 0px;
+  padding: 20px 20px 20px;
+  transition: .4s all ease-in-out;
+  cursor: pointer;
+}
+
+.error-page a:hover {
+  background-color: #aca0a0;
+  color: #3c4146;
+}

@@ -1,3 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
+
+<section>
+    <div class="error-page">
+        <h1>We apologize, but it seems like the page you are looking for has taken an unexpected detour. </h1>
+        <p>Let's get you back on track – feel free to explore our navigation menu or contact us for any assistance.
+        </p>
+        <a href="{{ url_for('index') }}" aria-label="Home">Back to Home</a>
+    </div>
+</section>
+
 {% endblock %}
