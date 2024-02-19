@@ -366,6 +366,7 @@ input::placeholder {
 }
 
 .about-us-heading h2 {
+  padding-top: 35px;
   color: #fcfafa;
   font-weight: bold;
   font-size: 3.5rem;
