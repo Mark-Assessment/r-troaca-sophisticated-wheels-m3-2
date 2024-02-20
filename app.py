@@ -15,6 +15,10 @@ app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 
 MONGO = PyMongo(app)
 
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    return render_template("register.html")
+
 
 @app.route("/")
 def index():
