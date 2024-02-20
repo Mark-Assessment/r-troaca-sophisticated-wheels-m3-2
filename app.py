@@ -27,6 +27,11 @@ def sell_car():
     return render_template("sell_car.html")
 
 
+@app.route("/account")
+def account():
+    return render_template("account.html")
+
+
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
     if request.method == "POST":
