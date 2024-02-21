@@ -37,7 +37,15 @@
                     <a href="{{ url_for('sell_car') }}" aria-label="Sell your car">Sell Your Car</a>
                 </li>
                 <li>
-                    <a href="{{ url_for('account') }}" aria-label="Account">Account</a>
+                    <a href="{{ url_for('account') }}" aria-label="Account">Account ▼</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="{{ url_for('register') }}">Register</a>
+                        </li>
+                        <li>
+                            <a href="{{ url_for('login') }}">Login</a> 
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="{{ url_for('contact') }}" aria-label="Contact">Contact</a>
@@ -60,7 +68,15 @@
                     <a href="{{ url_for('sell_car') }}" aria-label="Sell your car">Sell Your Car</a>
                 </li>
                 <li class="hideOnSmallDevice">
-                    <a href="{{ url_for('account') }}" aria-label="Account">Account</a>
+                    <a href="{{ url_for('account') }}" aria-label="Account">Account ▼</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="{{ url_for('register') }}">Register</a>
+                        </li>
+                        <li>
+                            <a href="{{ url_for('login') }}">Login</a> 
+                        </li>
+                    </ul>
                 </li>
                 <li class="hideOnSmallDevice">
                     <a href="{{ url_for('contact') }}" aria-label="Contact">Contact</a>
