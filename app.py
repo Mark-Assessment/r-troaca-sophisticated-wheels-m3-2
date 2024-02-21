@@ -20,6 +20,11 @@ def register():
     return render_template("register.html")
 
 
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    return render_template("login.html")
+
+
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -52,6 +57,7 @@ def contact():
             "Thank you for contacting us! We have received your enquiry.".format(
                 request.form.get("name")))
     return render_template("contact.html")
+
 
 @app.errorhandler(404)
 def page_not_found(e):
