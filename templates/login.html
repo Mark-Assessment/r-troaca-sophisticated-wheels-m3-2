@@ -5,6 +5,7 @@
     <div class="login-form">
         <form method="POST" action="{{ url_for('login')}}">
             <h1>Login</h1>
+            <!-- Username -->
             <div class="login-input">
                 <input type="text" id="username" name="username"
                  minlength="5" maxlength="15" placeholder="Username"
@@ -13,6 +14,7 @@
                     person
                 </span>
             </div>
+            <!-- Password -->
             <div class="login-input">
                 <input type="password" id="password" name="password"
                  minlength="8" maxlength="15" placeholder="Password"
@@ -21,6 +23,7 @@
                     lock
                 </span>
             </div>
+            <!-- Login button -->
             <button type="submit" class="login-btn">
                 Login
             </button>

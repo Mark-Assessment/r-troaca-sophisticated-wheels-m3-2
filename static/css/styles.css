@@ -131,7 +131,7 @@ ul li:hover ul.dropdown {
   display: block;
 }
 
-@media (max-width:1090px) {
+@media (max-width:1250px) {
   .hideOnSmallDevice {
     display: none;
   }
@@ -555,6 +555,7 @@ input::placeholder {
   padding: 15px;
   font-size: 50px;
   text-align: center;
+  
 }
 
 .login-input {
