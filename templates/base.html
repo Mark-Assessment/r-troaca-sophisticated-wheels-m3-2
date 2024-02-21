@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <title>Sophisticated Wheels</title>
 </head>
@@ -68,7 +69,8 @@
                     <a href="#" id="svg"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
                             width="24">
                             <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                        </svg></a>
+                        </svg>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -84,9 +86,9 @@
         </div>
         <div class="col-2">
             <h3>Account</h3>
-            <a href="#">Register</a>
-            <a href="#">Log In</a>
-            <a href="#">My Account</a>
+            <a href="{{ url_for('register') }}">Register</a>
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('account') }}">My Account</a>
         </div>
         <div class="col-3">
             <h3>Contact</h3>

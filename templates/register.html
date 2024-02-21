@@ -1,3 +1,36 @@
 {% extends "base.html" %}
 {% block content %}
+<section class="register-container">
+    <div class="register-form">
+        <form method="POST" action="{{ url_for('register')}}">
+            <h1>Register</h1>
+            <div class="register-input">
+                <input type="text" id="username" name="username"
+                 minlength="5" maxlength="15" placeholder="Username"
+                    required>
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+            </div>
+            <div class="register-input">
+                <input type="email" id="email" name="email"
+                 placeholder="Email address" required>
+                <span class="material-symbols-outlined">
+                    alternate_email
+                </span>
+            </div>
+            <div class="register-input">
+                <input type="password" id="password" name="password"
+                 minlength="8" maxlength="15" placeholder="Password"
+                    required>
+                <span class="material-symbols-outlined">
+                    lock
+                </span>
+            </div>
+            <button type="submit" class="register-btn">
+                Register
+            </button>
+        </form>
+    </div>
+</section>
 {% endblock %}

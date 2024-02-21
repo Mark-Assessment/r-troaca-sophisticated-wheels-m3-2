@@ -178,13 +178,19 @@ footer p {
   justify-content: center;
 }
 
+.indexcontainer h2 {
+  text-align: center;
+  padding: 20px;
+}
+
 .indexcontainer p {
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .indexcontainer ul {
   padding-left: 15px;
+  padding-bottom: 20px;
 }
 
 .indexcontainer p,
@@ -585,4 +591,69 @@ input::placeholder {
 
 .register-account a:hover {
   text-decoration:underline;
+}
+
+/* register */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.register-form {
+  width:500px;
+  background-color: rgba(238, 232, 232, 0.719);
+  backdrop-filter: blur(3px);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.register-form h1 {
+  padding: 15px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.register-input {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+  position: relative;
+}
+
+.register-input input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.register-input span {
+  justify-content: center;
+  position: absolute;
+  right:20px;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.register-btn {
+  width: 100%;
+  height: 50px;
+  border:none;
+  outline:none;
+  font-size: 18px;
+  font-weight: bolder;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #6b6464;
+  color:#fcfafa
+}
+
+.register-btn:hover {
+  background-color: #aca0a0;
+  color: #3c4146;
 }
