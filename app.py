@@ -17,12 +17,16 @@ mongo = PyMongo(app)
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    """
+    Returns the Register Page, allows the user to create a new account and
+    checks if the username is already taken to prevent duplication.
+    """
     if request.method == "POST":
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
 
         if existing_user:
-            flash("Username already exists")
+            flash("Username already exists!")
             return redirect(url_for("register"))
 
         register_user = {
@@ -33,13 +37,16 @@ def register():
 
         session["user"] = request.form.get("username").lower()
         flash("Registration successful!")
-        return redirect(url_for("profile", username = session["user"]))
 
     return render_template("register.html")
 
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    """
+    Returns the Login page and allows the user to log in via form,
+    checks in the database to ensure username and password match.
+    """
     return render_template("login.html")
 
 

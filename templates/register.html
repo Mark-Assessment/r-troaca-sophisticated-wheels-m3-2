@@ -34,6 +34,13 @@
             <button type="submit" class="register-btn">
                 Register
             </button>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                <p class="registration-successful">{{ message }}</p>
+                {% endfor %}
+            {% endif %}
+          {% endwith %}
         </form>
     </div>
 </section>
