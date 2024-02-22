@@ -1,6 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
 
+{% if session.user %}
+
+<section>
+    <div class="error-page">
+        <h1>We apologize, but it seems that you are already logged in.</h1>
+        <p>Let's get you back on track – feel free to explore our navigation menu or contact us for any assistance.
+        </p>
+        <a href="{{ url_for('index') }}" aria-label="Home">Back to Home</a>
+    </div>
+</section>
+
+{% else %}
 <section class="login-container">
     <div class="login-form">
         <form method="POST" action="{{ url_for('login')}}">
@@ -32,8 +44,16 @@
                      <a href="{{ url_for('register') }}">Register Account</a>
                 </p>
             </div>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                <p class="registration-successful">{{ message }}</p>
+                {% endfor %}
+            {% endif %}
+          {% endwith %}
         </form>
     </div>
 </section>
+{% endif %}
 
 {% endblock %}

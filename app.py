@@ -24,11 +24,11 @@ def register():
     if request.method == "POST":
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
-
+        # check if username exists in db
         if existing_user:
             flash("Username already exists!")
             return redirect(url_for("register"))
-
+        # register a new username
         register_user = {
             "username": request.form.get("username").lower(),
             "password": generate_password_hash(request.form.get("password"))
@@ -47,7 +47,35 @@ def login():
     Returns the Login page and allows the user to log in via form,
     checks in the database to ensure username and password match.
     """
+    if request.method == "POST":
+        # check if username exists in db
+        existing_user = mongo.db.users.find_one(
+            {"username": request.form.get("username").lower()})
+
+        if existing_user:
+            # ensure hashed password matches user input
+            if check_password_hash(
+                existing_user["password"], request.form.get("password")):
+                    session["user"] = request.form.get("username").lower()
+                    flash("Welcome, {}".format(request.form.get("username")))
+            else:
+                # invalid password match
+                flash("Incorrect Username and/or Password")
+                return redirect(url_for("login"))
+
+        else:
+            # username doesn't exist
+            flash("Incorrect Username and/or Password")
+            return redirect(url_for("login"))
+
     return render_template("login.html")
+
+
+@app.route('/logout')
+def logout():
+    """Logs out the user and pops the session"""
+    session.pop('username')
+    return render_template("pages/index.html")
 
 
 @app.route("/")
@@ -87,14 +115,15 @@ def contact():
 @app.errorhandler(404)
 def page_not_found(e):
     """
-    On 404 error redirects the user to the 404 page
+    On 404 error redirects the user to the 404 page.
     """
     return render_template('404.html'), 404
+
 
 @app.errorhandler(500)
 def internal_error(err):
     """
-    On 500 error redirects the user to the 500 page
+    On 500 error redirects the user to the 500 page.
     """
     return render_template('500.html'), 500
 
