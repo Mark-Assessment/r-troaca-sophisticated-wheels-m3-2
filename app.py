@@ -97,8 +97,8 @@ def sell_car():
     return render_template("sell_car.html")
 
 
-@app.route("/account/<username>", methods=["GET", "POST"])
-def account(username):
+@app.route("/account", methods=["GET", "POST"])
+def account():
     # grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
