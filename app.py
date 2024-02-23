@@ -17,36 +17,32 @@ mongo = PyMongo(app)
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
-    """
-    Returns the Register Page, allows the user to create a new account and
-    checks if the username is already taken to prevent duplication.
-    """
     if request.method == "POST":
+        # check if username already exists in db
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
-        # check if username exists in db
+
         if existing_user:
-            flash("Username already exists!")
+            flash("Username already exists")
             return redirect(url_for("register"))
-        # register a new username
-        register_user = {
+
+        register = {
             "username": request.form.get("username").lower(),
             "password": generate_password_hash(request.form.get("password"))
         }
-        mongo.db.users.insert_one(register_user)
+        mongo.db.users.insert_one(register)
 
+        # put the new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
-        flash("Registration successful!")
+        flash("Registration Successful!")
+        return redirect(url_for("account", username=session["user"]))
 
     return render_template("register.html")
 
 
-@app.route('/login', methods=['GET', 'POST'])
+
+@app.route("/login", methods=["GET", "POST"])
 def login():
-    """
-    Returns the Login page and allows the user to log in via form,
-    checks in the database to ensure username and password match.
-    """
     if request.method == "POST":
         # check if username exists in db
         existing_user = mongo.db.users.find_one(
@@ -55,9 +51,12 @@ def login():
         if existing_user:
             # ensure hashed password matches user input
             if check_password_hash(
-                existing_user["password"], request.form.get("password")):
-                    session["user"] = request.form.get("username").lower()
-                    flash("Welcome, {}".format(request.form.get("username")))
+                    existing_user["password"], request.form.get("password")):
+                        session["user"] = request.form.get("username").lower()
+                        flash("Welcome, {}".format(
+                            request.form.get("username")))
+                        return redirect(url_for(
+                            "account", username=session["user"]))
             else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")
@@ -74,8 +73,8 @@ def login():
 @app.route('/logout')
 def logout():
     """Logs out the user and pops the session"""
-    session.pop('username')
-    return render_template("pages/index.html")
+    session.pop('user')
+    return render_template("index.html")
 
 
 @app.route("/")
@@ -98,9 +97,12 @@ def sell_car():
     return render_template("sell_car.html")
 
 
-@app.route("/account")
-def account():
-    return render_template("account.html")
+@app.route("/account/<username>", methods=["GET", "POST"])
+def account(username):
+    # grab the session user's username from db
+    username = mongo.db.users.find_one(
+        {"username": session["user"]})["username"]
+    return render_template("account.html", username=username)
 
 
 @app.route("/contact", methods=["GET", "POST"])
