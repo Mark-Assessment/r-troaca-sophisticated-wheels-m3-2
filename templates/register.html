@@ -1,5 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
+
+{% if session.user %}
+
+<section>
+    <div class="error-page">
+        <h1>We apologize, but it seems that you are already logged in.</h1>
+        <p>If you want to register another account,
+             you need to log out first and then create a different account.
+        </p>
+        <a href="{{ url_for('logout') }}" aria-label="Log Out">Log Out</a>
+    </div>
+</section>
+
+{% else %}
+
 <section class="register-container">
     <div class="register-form">
         <form method="POST" action="{{ url_for('register')}}">
@@ -49,4 +64,5 @@
         </form>
     </div>
 </section>
+{% endif %}
 {% endblock %}
