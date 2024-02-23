@@ -718,9 +718,69 @@ input::placeholder {
   padding-right: 20px;
 }
 
+.car1 {
+  background-image: url("/static/images/cars/bentley_continental.webp");
+  background-size: cover;
+}
+
+.car2 {
+  background-image: url("/static/images/cars/ferrari_spider.webp");
+  background-size: cover;
+}
+
+.car3 {
+  background-image: url("/static/images/cars/ford_mustang.webp");
+  background-size: cover;
+}
+
+.car4 {
+  background-image: url("/static/images/cars/koenigsegg_agera.webp");
+  background-size: cover;
+}
+
+.car5 {
+  background-image: url("/static/images/cars/lamborghini_countach.webp");
+  background-size: cover;
+}
+
+.car6 {
+  background-image: url("/static/images/cars/lamborghini_urus.webp");
+  background-size: cover;
+}
+
+.car7 {
+  background-image: url("/static/images/cars/landrover_rangerover.webp");
+  background-size: cover;
+}
+
+.car8 {
+  background-image: url("/static/images/cars/mclaren_p1.webp");
+  background-size: cover;
+}
+
+.car9 {
+  background-image: url("/static/images/cars/mercedes_gwagon.webp");
+  background-size: cover;
+}
+
+.car10 {
+  background-image: url("/static/images/cars/pagani_zonda.webp");
+  background-size: cover;
+}
+
+.car11 {
+  background-image: url("/static/images/cars/porsche911_turbo.webp");
+  background-size: cover;
+}
+
+.car12 {
+  background-image: url("/static/images/cars/rollsroyce_wraith.webp");
+  background-size: cover;
+}
+
 .card .card-img {
   width: 100%;
-  height: 200px;
+  height: 250px;
   border-radius: 10px;
   margin-bottom: 15px;
   transition: all 0.3s ease-in-out ;
@@ -740,6 +800,10 @@ input::placeholder {
   transition-delay: 0.1s;
 }
 
+.card ul {
+  padding-left:15px;
+}
+
 .card a {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -750,7 +814,6 @@ input::placeholder {
   padding: 15px;
   border-radius: 4px;
   background-color: #6b6464;
-
 }
 
 .card-content {
@@ -765,7 +828,7 @@ input::placeholder {
 }
 
 .card:hover .card-content {
-  height: 340x;
+  height: 250px;
   overflow: visible;
 }
 
