@@ -19,7 +19,7 @@
 <!-- Sell form -->
     <div class="wrapper">
         <h3>
-            Sell Your Car
+            Please Complete this Form
         </h3>
         <div class="sell-form">
             <form method="POST" enctype="multipart/form-data" action="{{ url_for('sell_car') }}">
@@ -55,7 +55,7 @@
                 </div>
                 <div class="inputfield">
                     <label>Year</label>
-                    <input type="date" class="input" name="year" id="year" required>
+                    <input type="number" class="input" name="year" id="year" required>
                 </div>
                 <div class="inputfield">
                     <label>Fuel Type</label>
@@ -63,14 +63,14 @@
                 </div>
                 <div class="inputfield">
                     <label>Colour</label>
-                    <input type="text" class="input" name="colour" id="colour" required>
+                    <input type="color" class="input" name="colour" id="colour" required>
                 </div>
                 <div class="inputfield">
                     <label>Mileage</label>
                     <input type="number" class="input" name="mileage" id="mileage" required>
                 </div>
                 <div class="inputfield">
-                    <label>Price Asked</label>
+                    <label>Price Asked (£)</label>
                     <input type="number" class="input" name="price" id="price" required>
                 </div>
                 <div class="inputfield">
