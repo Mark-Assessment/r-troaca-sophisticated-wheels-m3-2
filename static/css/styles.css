@@ -13,8 +13,12 @@ body {
   min-height: 100vh;
   background-image: url('../images/road.jpg');
   background-position: center;
-  background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
@@ -200,7 +204,7 @@ footer p {
   border-radius: 8px;
   background-color: rgba(238, 232, 232, 0.719);
   backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px)
+  -webkit-backdrop-filter: blur(3px);
   align-content: center;
   justify-content: center;
 }
