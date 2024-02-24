@@ -211,6 +211,11 @@ footer p {
 .indexcontainer p {
   padding-top: 20px;
   padding-bottom: 20px;
+  font-size: 1.2rem;
+  color:#191919;
+  text-shadow: 1px 1px #fcfafa;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .indexcontainer ul {
@@ -218,11 +223,10 @@ footer p {
   padding-bottom: 20px;
 }
 
-.indexcontainer p,
-li {
-  font-weight: 500;
+.indexcontainer li {
   letter-spacing: 1px;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 /* contact */
@@ -459,8 +463,18 @@ input::placeholder {
 .about-content p {
   font-size: 1.5rem;
   line-height: 1.5;
-  color: #fcfafa;
-  text-shadow: 2px 2px black;
+  color:#191919;
+  text-shadow: 1px 1px #fcfafa;
+  font-weight: bolder;
+  max-width: 1200px;
+  margin: 250px auto;
+  padding: 30px 30px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: rgba(238, 232, 232, 0.719);
+  backdrop-filter: blur(3px);
+  align-content: center;
+  justify-content: center;
 }
 
 @media screen and (max-width:768px) {
@@ -489,7 +503,7 @@ input::placeholder {
 
 
   .about-content p {
-    padding: 0px;
+    padding: 10px;
   }
 }
 
@@ -716,6 +730,7 @@ input::placeholder {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+  box-shadow: 2px 2px 2px #191919;
 }
 
 .car1 {
@@ -784,6 +799,7 @@ input::placeholder {
   border-radius: 10px;
   margin-bottom: 15px;
   transition: all 0.3s ease-in-out ;
+  box-shadow: 5px 5px 5px #191919;
 }
 
 .card h3 {
@@ -820,6 +836,7 @@ input::placeholder {
   height: 35px;
   overflow: hidden;
   transition: height 0.3s ease-in-out;
+  font-weight: 600;
 }
 
 .card:hover .card-img {
