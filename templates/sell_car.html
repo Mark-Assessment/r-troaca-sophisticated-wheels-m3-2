@@ -1,3 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
+
+{% if session.user %}
+
+
+
+{% else %}
+
+<section>
+    <div class="error-page">
+        <h1>To sell your car you need an account created.</h1>
+        <p>Please log in or register an account if you do not have one.
+        </p>
+        <a href="{{ url_for('login') }}" aria-label="Login">Login</a>
+    </div>
+</section>
+
+{% endif %}
+
 {% endblock %}

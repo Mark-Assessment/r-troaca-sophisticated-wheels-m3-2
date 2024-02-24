@@ -79,6 +79,7 @@ nav li:first-child {
   z-index: 999;
   background-color: rgba(238, 232, 232, 0.719);
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   display: none;
   flex-direction: column;
@@ -115,7 +116,7 @@ ul li ul.dropdown li{
 
 ul li ul.dropdown li:first-child {
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
 }
 
@@ -199,6 +200,7 @@ footer p {
   border-radius: 8px;
   background-color: rgba(238, 232, 232, 0.719);
   backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px)
   align-content: center;
   justify-content: center;
 }
@@ -473,6 +475,7 @@ input::placeholder {
   border-radius: 8px;
   background-color: rgba(238, 232, 232, 0.719);
   backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   align-content: center;
   justify-content: center;
 }
@@ -569,6 +572,7 @@ input::placeholder {
   width:500px;
   background-color: rgba(238, 232, 232, 0.719);
   backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   padding: 20px;
   border-radius: 20px;
 }
@@ -652,6 +656,7 @@ input::placeholder {
   width:500px;
   background-color: rgba(238, 232, 232, 0.719);
   backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   padding: 20px;
   border-radius: 20px;
 }
