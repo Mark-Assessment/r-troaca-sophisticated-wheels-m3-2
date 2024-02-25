@@ -478,7 +478,7 @@ During my manual testing, I have tested every user story, to ensure that the nee
 
 ![JSHint results](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/jshint.png?raw=true)
 
-#### [***Python linter*** - <https://pep8ci.herokuapp.com/>
+#### ***Python linter*** - <https://pep8ci.herokuapp.com/>
 
 ![Python linter results](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/pep8compliance.png?raw=true)
 
@@ -487,5 +487,122 @@ During my manual testing, I have tested every user story, to ensure that the nee
 - All lighthouse tests have been made while in incognito mode to avoid any browser extensions interference.
 - I have asked several people to run lighthouse tests from their own devices as well, and they were getting similar scores.
 
-![Index.html lighthouse score]()
+![Index.html lighthouse score]((https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/lighthouse.png?raw=true))
 ***
+
+## **Deployment**
+
+### **Local Deployment**
+
+To run the project locally, install:
+- [Python3](https://www.python.org/downloads) to run the app
+- [PIP](https://pip.pypa.io/en/stable/installation/) to install all app requirements
+- [Microsoft Visual Studio Code](https://visualstudio.microsoft.com/)
+- [GIT](https://www.atlassian.com/git/tutorials/install-git) for version control
+- [MongoDB Atlas](https://www.mongodb.com/atlas) to develop the database
+
+For local deployment:
+
+- Clone this GitHub repository by clicking the green `Code` button and `Download ZIP` to download a copy of the project as a zip-file
+
+- Unzip the file
+
+- Navigate to the correct file location after unpacking the files
+    - `cd <path to folder>`
+
+- Create a `env.py` file with your credentials. 
+
+- Install all requirements from the requirements.txt file using this command:
+    - `sudo -H pip3 -r requirements.txt`
+
+- Sign up for a free account on [MongoDB](https://www.mongodb.com/Atlas) and create a new Database called **sophisticated_wheels**. The *Collections* (tables) in that database should be as follows:
+
+**cars**
+```
+_id: <ObjectId>
+fname: <string>
+lname: <string>
+brand: <string>
+model: <string>
+body_type: <string>
+year: <string>
+fuel: <string>
+colour: <string>
+mileage: <string>
+price: <string>
+email: <string>
+telephone: <string>
+```
+
+**users**
+```
+_id: <ObjectId>
+username: <string>
+password: <string>
+```
+
+- Launch the app typing the following command in the terminal:
+    - `flask run`
+- The app should run on *localhost* on an address similar to `http://127.0.0.1:5000`. More information [here](https://code.visualstudio.com/docs/python/tutorial-flask).
+
+### **Remote Deployment**
+
+This site is currently deployed on [Heroku](https://www.heroku.com/) using the **main** branch on GitHub. To implement this project on Heroku, the following steps were taken:
+
+1. Create a **requirements.txt** file so Heroku can install the required dependencies to run the app.
+    - `sudo pip3 freeze --local > requirements.txt`
+
+2. Create a **Procfile** to tell Heroku that this is a Python app
+    - `echo web: python app.py > Procfile`
+
+	- Make sure there are no blanks lines at the end of the file!
+
+3. Sign up for a free [Heroku](https://www.heroku.com/) account
+
+    - Create a new app
+
+    - Click the **Deploy** tab 
+
+    - Go to Deployment Method section and click *Connect GitHub*
+
+    - Make sure your GitHub profile is displayed and add the repository name. Once your repository is found, click to connect
+
+    -  Select **Enable Automatic Deploys** button 
+
+4. Click on **Settings** tab, then click on **Reveal Config Vars**. 
+
+- Now we can securely tell Heroku which variables are required by the env.py file. 
+Configure the environmental variables as follows:
+
+    - **IP** : 0.0.0.0
+    - **PORT** : 5000
+    - **SECRET_KEY** : <your_own_secret_key>
+    - **MONGO_URI** : <link_to_your_MongoDB>
+    - **MONGO_DBNAME** : sophisticated_wheels
+    - **DEBUG** : False
+
+5. Go back to **Deploy** tab and navigate to **Deploy a GitHub branch**. Click **Deploy Branch** button. Once the app has been built, you can **View** it.
+
+## **Credits**
+
+### **General reference:**
+
+Heroku deployment instructions from Code Institute video tutorial
+
+Readme styling from Tim Nelson's project [Unicorn Attractor](https://github.com/TravelTimN/ci-milestone05-fsfw)
+
+Markdown Cheatsheet from [Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#html)
+
+### **Content:**
+
+Background from [Jan Kroon](https://www.pexels.com/photo/grayscale-photo-of-road-1038935/ on Pexels
+
+Animation from [Michal Snik](https://michalsnik.github.io/aos/)
+
+Dropdown menu from [HowToCodeSchool](https://www.youtube.com/watch?v=eKo1NV1qxbc) on Youtube
+
+Cards tutorial from [Web Lang](https://youtu.be/NG-g11zUSck?si=6oY1MgJtW3bklYAA) on Youtube
+
+Selling form from [RajeshHDN](https://codepen.io/RajRajeshDn/pen/QWwypRy) on CodePen
+
+
