@@ -11,18 +11,17 @@
 
 body {
   min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
   background-image: url('../images/road.jpg');
   background-position: center;
-  background-attachment: fixed;
+  background-attachment:fixed;
   background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-repeat: no-repeat;
-  font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
-
 
 /* navbar */
 

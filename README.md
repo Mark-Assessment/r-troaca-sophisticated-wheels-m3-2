@@ -1,56 +1,56 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **Sophisticated Wheels**
 
-Welcome,
+## **Site Overview**
 
-This is the Code Institute student template for the mongo lessons. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[View the live project here.](https://sophisticated-wheels-1ab4360cc753.herokuapp.com/)
+Discover the epitome of automotive excellence in Leicester at Sophisticated Wheels. Immerse yourself in our exclusive collection of prestigious vehicles, meticulously curated for the discerning driver. Indulge your automotive desires with our diverse array of luxury cars, conveniently showcased in our state-of-the-art showroom. At Sophisticated Wheels, we understand that your quest for the perfect vehicle is a journey, and we're here to accompany you every step of the way. Our commitment to excellence extends beyond aesthetics. Whether you crave the thrill of a sports car or the old school feel of a classic car, we stand ready to guide you to your ideal automotive companion in Leicester. As a fully approved service center, our dedication to quality assurance ensures that your confidence in us is well-placed. When you choose us, you're not just buying a car; you're investing in a seamless and reassuring experience.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **April 3rd, 2023**
+![Website responsiveness](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/amiresponsive.png?raw=true)
 
-## Codeanywhere Reminders
+## Table of contents
 
-# IDE
+- [**Sophisticated Wheels**](#sophisticated-wheels)
+  - [**Site Overview**](#site-overview)
+  - [Table of contents](#table-of-contents)
+  - [**Planning stage**](#planning-stage)
+    - [**Target Audiences:**](#target-audiences)
+    - [**User Stories:**](#user-stories)
+    - [**Site Aims:**](#site-aims)
+    - [**How Will This Be Achieved:**](#how-will-this-be-achieved)
+    - [**Wireframes:**](#wireframes)
+    - [**Color Scheme:**](#color-scheme)
+    - [**Technologies Used:**](#technologies-used)
+      - [**Design Tools**](#design-tools)
+      - [**Front-End**](#front-end)
+      - [**Back-End**](#back-end)
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose option 4.4 for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password *(will not echo **\*\*\*\*** *on screen)\*
-
-#### Clear screen in Mongo Shell:
-
-- `cls`
-
-#### Show all database collections:
-
-- `show collections`
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
-
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+  - [**Current Features Common to all pages**](#current-features-common-to-all-pages)
+    - [**Header Element**](#header-element)
+      - [*Navigation Bar:*](#navigation-bar)
+  - [**Footer**](#footer)
+  - [**Individual Page Content features**](#individual-page-content-features)
+    - [**Home Page Content:**](#home-page-content)
+    - [**About Us Page Content:**](#about-us-page-content)
+    - [**Our Fleet Page Content:**](#comedour-fleet-page-content)
+    - [**Sell Your Car Page Content**](#sell-your-car-page-content)
+    - [**Account Page Content**](#account-page-content)
+    - [**Login Page Content**](#login-page-content)
+    - [**Register Page Content**](#register-page-content)
+    - [**Contact Page Content**](#account-page-content)
+    - [**404 Error Page Content**](#404-error-page-content)
+  - [**Future-Enhancements**](#future-enhancements)
+  - [**Testing Phase**](#testing-phase)
+    - [**Testing During Development**](#testing-during-development)
+      - [**Manual Testing**](#manual-testing)
+      - [**User Story Testing**](#user-story-testing)
+      - [**Functionality testing**](#functionality-testing)
+      - [**Bugs and fixes**](#bugs-and-fixes)
+    - [**Testing After Development**](#testing-after-development)
+      - [**Validators**](#validators)
+      - [***HTML*** - https://validator.w3.org/nu/](#html---httpsvalidatorw3orgnu)
+      - [***CSS*** - https://jigsaw.w3.org/css-validator/](#css---httpsjigsaww3orgcss-validator)
+      - [**Lighthouse Scores**](#lighthouse-scores)
+  - [**Deployment**](#deployment)
+  - [**Credits**](#credits)
+    - [**General reference:**](#general-reference)
+    - [**Content:**](#content)
