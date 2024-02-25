@@ -18,7 +18,7 @@
             Please Complete this Form
         </h3>
         <div class="sell-form">
-            <form method="POST" enctype="multipart/form-data" action="{{ url_for('edit_car', car_id=car_id) }}">
+            <form method="POST" enctype="multipart/form-data" action="{{ url_for('edit_car', car_id=car._id) }}">
                 <div class="inputfield">
                     <label>First Name</label>
                     <input type="text" class="input" value="{{ car.fname }}" name="fname" id="fname" required>

@@ -139,11 +139,11 @@ def edit_car(car_id):
             'telephone': request.form.get('telephone')
         }
 
-        # Insert data into MongoDB
-        cars.update({"_id": ObjectId(car_id)}, submit)
+        # Update data into MongoDB
+        cars.update_one({"_id": ObjectId(car_id)}, {"$set": submit})
 
         return redirect(url_for('account'))
-    return render_template("sell_car.html", car=car)
+    return render_template("edit_car.html", car=car)
 
 
 
