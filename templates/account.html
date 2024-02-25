@@ -14,7 +14,6 @@
             </div>
             <div class="card-content">
                 <h3>{{ car.brand }}</h3>
-                <p>
                 <ul>
                     <li>Model: {{ car.model }}</li>
                     <li>Body Type: {{ car.body_type }}</li>
@@ -28,7 +27,6 @@
                     <li>Last Name: {{ car.lname }}</li>
                     <li>Telephone: {{ car.telephone }}</li>
                 </ul>
-                </p>
                 <a href="{{ url_for('edit_car', car_id=car._id) }}" aria-label="Edit">Edit</a>
                 <a href="{{ url_for('delete_car', car_id=car._id) }}" aria-label="Delete">Delete</a>
             </div>

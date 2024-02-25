@@ -822,11 +822,11 @@ input::placeholder {
   text-align: center;
 }
 
-.card h3, .card p {
+.card h3, .card ul {
   margin-bottom: 15px;
 }
 
-.card p {
+.card ul {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   transition-delay: 0.1s;
@@ -847,6 +847,7 @@ input::placeholder {
   border-radius: 4px;
   background-color: #6b6464;
   margin-left: 25px;
+  margin-right: 25px;
 }
 
 .card-content {
@@ -866,7 +867,7 @@ input::placeholder {
   overflow: visible;
 }
 
-.card:hover p, .card:hover a {
+.card:hover ul, .card:hover a {
   opacity: 1;
 }
 

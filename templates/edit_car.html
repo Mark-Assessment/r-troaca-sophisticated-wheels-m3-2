@@ -12,7 +12,7 @@
             </p>
         </div>
     </div>
-<!-- Edit form -->
+    <!-- Edit form -->
     <div class="wrapper">
         <h3>
             Please Complete this Form
@@ -25,7 +25,7 @@
                 </div>
                 <div class="inputfield">
                     <label>Last Name</label>
-                    <input type="text" class="input"  value="{{ car.lname }}" name="lname" id="lname" required>
+                    <input type="text" class="input" value="{{ car.lname }}" name="lname" id="lname" required>
                 </div>
                 <div class="inputfield">
                     <label>Brand</label>
@@ -40,19 +40,24 @@
                     <div class="custom_select">
                         <select name="body_type" required>
                             <option value="" disabled>Select</option>
-                            <option value="convertible" {% if car and car.body_type=='convertible' %} selected{% endif %}>Convertible
+                            <option value="convertible" {% if car and car.body_type=='convertible' %} selected{% endif
+                                %}>Convertible
                             </option>
-                            <option value="coupe" {% if car and car.body_type=='coupe' %} selected {% endif %}>Coupe</option>
+                            <option value="coupe" {% if car and car.body_type=='coupe' %} selected {% endif %}>Coupe
+                            </option>
                             <option value="4x4" {% if car and car.body_type=='4x4' %} selected {% endif %}>4x4</option>
-                            <option value="saloon" {% if car and car.body_type=='saloon' %} selected {% endif %}>Saloon</option>
-                            <option value="sportscar" {% if car and car.body_type=='sportscar' %} selected {% endif %}>Sports Car</option>
+                            <option value="saloon" {% if car and car.body_type=='saloon' %} selected {% endif %}>Saloon
+                            </option>
+                            <option value="sportscar" {% if car and car.body_type=='sportscar' %} selected {% endif %}>
+                                Sports Car</option>
                             <option value="suv" {% if car and car.body_type=='suv' %} selected {% endif %}>SUV</option>
                         </select>
                     </div>
                 </div>
                 <div class="inputfield">
                     <label>Year</label>
-                    <input type="number" class="input" value="{{ car.year }}" maxlength="4" name="year" id="year" required>
+                    <input type="number" class="input" value="{{ car.year }}" maxlength="4" name="year" id="year"
+                        required>
                 </div>
                 <div class="inputfield">
                     <label>Fuel Type</label>
@@ -76,7 +81,8 @@
                 </div>
                 <div class="inputfield">
                     <label>Phone Number</label>
-                    <input type="tel" class="input" value="{{ car.telephone }}" name="telephone" id="telephone" required>
+                    <input type="tel" class="input" value="{{ car.telephone }}" name="telephone" id="telephone"
+                        required>
                 </div>
                 <div class="inputfield">
                     <input type="submit" value="Edit" class="btn">
@@ -84,7 +90,7 @@
             </form>
         </div>
     </div>
-    </section>
+</section>
 
 {% else %}
 

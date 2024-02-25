@@ -7,7 +7,7 @@
     <div class="error-page">
         <h1>We apologize, but it seems that you are already logged in.</h1>
         <p>If you want to register another account,
-             you need to log out first and then create a different account.
+            you need to log out first and then create a different account.
         </p>
         <a href="{{ url_for('logout') }}" aria-label="Log Out">Log Out</a>
     </div>
@@ -21,8 +21,7 @@
             <h1>Register</h1>
             <!-- Username -->
             <div class="register-input">
-                <input type="text" id="username" name="username"
-                 minlength="5" maxlength="15" placeholder="Username"
+                <input type="text" id="username" name="username" minlength="5" maxlength="15" placeholder="Username"
                     required>
                 <span class="material-symbols-outlined">
                     person
@@ -30,16 +29,14 @@
             </div>
             <!-- Email -->
             <div class="register-input">
-                <input type="email" id="email" name="email"
-                 placeholder="Email address" required>
+                <input type="email" id="email" name="email" placeholder="Email address" required>
                 <span class="material-symbols-outlined">
                     alternate_email
                 </span>
             </div>
             <!-- Password -->
             <div class="register-input">
-                <input type="password" id="password" name="password"
-                 minlength="8" maxlength="15" placeholder="Password"
+                <input type="password" id="password" name="password" minlength="8" maxlength="15" placeholder="Password"
                     required>
                 <span class="material-symbols-outlined">
                     lock
@@ -51,16 +48,16 @@
             </button>
             <div class="register-account">
                 <p>Already have an account?
-                     <a href="{{ url_for('login') }}">Log in</a>
+                    <a href="{{ url_for('login') }}">Log in</a>
                 </p>
             </div>
             {% with messages = get_flashed_messages() %}
             {% if messages %}
-                {% for message in messages %}
-                <p class="registration-successful">{{ message }}</p>
-                {% endfor %}
+            {% for message in messages %}
+            <p class="registration-successful">{{ message }}</p>
+            {% endfor %}
             {% endif %}
-          {% endwith %}
+            {% endwith %}
         </form>
     </div>
 </section>

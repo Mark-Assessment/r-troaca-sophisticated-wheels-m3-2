@@ -19,8 +19,7 @@
             <h1>Login</h1>
             <!-- Username -->
             <div class="login-input">
-                <input type="text" id="username" name="username"
-                 minlength="5" maxlength="15" placeholder="Username"
+                <input type="text" id="username" name="username" minlength="5" maxlength="15" placeholder="Username"
                     required>
                 <span class="material-symbols-outlined">
                     person
@@ -28,8 +27,7 @@
             </div>
             <!-- Password -->
             <div class="login-input">
-                <input type="password" id="password" name="password"
-                 minlength="8" maxlength="15" placeholder="Password"
+                <input type="password" id="password" name="password" minlength="8" maxlength="15" placeholder="Password"
                     required>
                 <span class="material-symbols-outlined">
                     lock
@@ -41,16 +39,16 @@
             </button>
             <div class="register-account">
                 <p>Don't have an existing account?
-                     <a href="{{ url_for('register') }}">Register Account</a>
+                    <a href="{{ url_for('register') }}">Register Account</a>
                 </p>
             </div>
             {% with messages = get_flashed_messages() %}
             {% if messages %}
-                {% for message in messages %}
-                <p class="registration-successful">{{ message }}</p>
-                {% endfor %}
+            {% for message in messages %}
+            <p class="registration-successful">{{ message }}</p>
+            {% endfor %}
             {% endif %}
-          {% endwith %}
+            {% endwith %}
         </form>
     </div>
 </section>
