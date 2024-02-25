@@ -846,6 +846,7 @@ input::placeholder {
   padding: 15px;
   border-radius: 4px;
   background-color: #6b6464;
+  margin-left: 25px;
 }
 
 .card-content {

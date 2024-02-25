@@ -146,6 +146,11 @@ def edit_car(car_id):
     return render_template("edit_car.html", car=car)
 
 
+@app.route("/delete_car/<car_id>")
+def delete_car(car_id):
+    mongo.db.cars.delete_one({"_id": ObjectId(car_id)})
+    return redirect(url_for("account"))
+
 
 @app.route("/account", methods=["GET", "POST"])
 def account():
