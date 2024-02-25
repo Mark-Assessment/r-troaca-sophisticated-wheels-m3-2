@@ -231,3 +231,40 @@ While for the logo of the website, in the left corner, I chose a Google font cal
 * The footer includes a copyright notice at the bottom and has the same dark background as the navbar. The footer also includes a function that automatically updates the date.
 
 ![Footer](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/footer.png?raw=true)
+
+## **Individual Page Content features**
+
+### **Home Page Content:**
+* This page contains three short paragraphs that give a short description about the car showroom. All three have a scroll animation while scrolling down the page, they pop up from left to right. The animation was used from [https://michalsnik.github.io/aos/].
+  
+![Home section1](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/section1.png?raw=true)
+
+![Home section2](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/section2.png?raw=true)
+
+![Home section3](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/section3.png?raw=true)
+
+### **About Us Page Content:**
+* At the top of the page there is a heading that contains the title of the page.
+* This page contains a wider description of what you can find in this luxury car showroom as well as some AI created images of the showroom. They also have a scrolling animation as the ones on the home page.
+  
+![About Us section1](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/absection1.png?raw=true)
+
+![About Us section2](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/absection2.png?raw=true)
+
+![About Us section3](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/absection3.png?raw=true)
+
+### **Our Fleet Page Content:**
+* At the top of the page there is a heading that contains the title of the page and a short paragraph about the cars in stock.
+* This page contains all the cars available in the showroom. Every car has an image and a description that pops up when you hover on top of each of them. Underneath each car there is an enquire about this car button that redirects the user to the contact form.
+  
+![Our Fleet section1](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/fleet1.png?raw=true)
+
+![Our Fleet section2](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/fleet2.png?raw=true)
+
+### **Sell Your Car Page Content:**
+* If the user is not logged in, the page will display a message that informs the user that they need to be logged in to be able to sell a car or to register if he has not done that previously.
+  
+![Our Fleet section1](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/sell1.png?raw=true)
+
+*If the user is logged in, a selling form is being displayed.
+![Our Fleet section2](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/sell2.png?raw=true)
