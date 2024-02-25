@@ -90,8 +90,33 @@ def our_fleet():
     return render_template("our_fleet.html")
 
 
-@app.route("/sell_car")
+@app.route("/sell_car", methods=["GET", "POST"])
 def sell_car():
+    """
+    Returns Sell Your Car page and sends the form to the database when posted.
+    """
+    if request.method == 'POST':
+        cars = mongo.db.cars
+        car = {
+            'fname': request.form.get('fname'),
+            'lname': request.form.get('lname'),
+            'brand': request.form.get('brand'),
+            'model': request.form.get('model'),
+            'body_type': request.form.get('body_type'),
+            'year': request.form.get('year'),
+            'fuel': request.form.get('fuel'),
+            'colour': request.form.get('colour'),
+            'mileage': request.form.get('mileage'),
+            'price': request.form.get('price'),
+            'email': request.form.get('email'),
+            'telephone': request.form.get('telephone'),
+            'photo_link': request.form.get('photo_link')
+        }
+
+        # Insert data into MongoDB
+        cars.insert_one(car)
+
+        return redirect(url_for('account'))
     return render_template("sell_car.html")
 
 
@@ -102,6 +127,7 @@ def account():
         # grab the session user's username from db
         username = mongo.db.users.find_one(
             {"username": session["user"]})["username"]
+        cars = list(mongo.db.plants.find().sort("car", 1))
         return render_template("account.html", username=username)
     else:
         return render_template("login.html")

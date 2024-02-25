@@ -944,7 +944,7 @@ input::placeholder {
   height: 100%;
   border: 0px;
   padding: 8px 10px;
-  font-size: 15px;
+  font-size: 16px;
   border: 1px solid #d5dbd9;
   border-radius: 3px;
 }
@@ -961,8 +961,9 @@ input::placeholder {
 
 .wrapper .sell-form .inputfield .btn{
   width: 100%;
-   padding: 8px 10px;
-  font-size: 15px; 
+  margin-top: 15px;
+  padding: 10px 10px;
+  font-size: 16px; 
   border: 0px;
   background:  #3c4146;
   color:#fcfafa;

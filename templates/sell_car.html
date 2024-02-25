@@ -55,7 +55,7 @@
                 </div>
                 <div class="inputfield">
                     <label>Year</label>
-                    <input type="number" class="input" name="year" id="year" required>
+                    <input type="number" class="input" maxlength="4" name="year" id="year" required>
                 </div>
                 <div class="inputfield">
                     <label>Fuel Type</label>
@@ -63,7 +63,7 @@
                 </div>
                 <div class="inputfield">
                     <label>Colour</label>
-                    <input type="color" class="input" name="colour" id="colour" required>
+                    <input type="text" class="input" name="colour" id="colour" required>
                 </div>
                 <div class="inputfield">
                     <label>Mileage</label>
@@ -71,7 +71,7 @@
                 </div>
                 <div class="inputfield">
                     <label>Price Asked (£)</label>
-                    <input type="number" class="input" name="price" id="price" required>
+                    <input type="number" class="input" name="price_asked" id="price_asked" required>
                 </div>
                 <div class="inputfield">
                     <label>Email Address</label>
@@ -82,7 +82,11 @@
                     <input type="tel" class="input" name="telephone" id="telephone" required>
                 </div>
                 <div class="inputfield">
-                    <input type="submit" value="Register" class="btn" >
+                    <label>Photo Link</label>
+                    <input type="url" class="input" name="photo_link" id="photo_link" placeholder="Paste photo url here">
+                </div>
+                <div class="inputfield">
+                    <input type="submit" value="Submit" class="btn">
                 </div>
             </form>
         </div>
