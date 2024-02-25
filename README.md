@@ -29,8 +29,7 @@ Discover the epitome of automotive excellence in Leicester at Sophisticated Whee
 
   - [**Current Features Common to all pages**](#current-features-common-to-all-pages)
     - [**Header Element**](#header-element)
-      - [*Navigation Bar:*](#navigation-bar)
-  - [**Footer**](#footer)
+    - [**Footer**](#footer)
   - [**Individual Page Content features**](#individual-page-content-features)
     - [**Home Page Content:**](#home-page-content)
     - [**About Us Page Content:**](#about-us-page-content)
@@ -147,9 +146,37 @@ Discover the epitome of automotive excellence in Leicester at Sophisticated Whee
 ### **Color Scheme:**
 
 When deciding the color scheme I wanted a dark road background with grey or white text for the contents for a good contrast. The color palette was created using [https://coolors.co/]
+
 ![Color Palette](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/palette.png?raw=true)
 
 
 I also created this color contrast grid using [https://contrast-grid.eightshapes.com/](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23191919%0D%0A%233C4146%0D%0A%236B6464%0D%0A%23ACA0A0%0D%0A%23FCFAFA&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp), to check the contrast scored and ensure the text remains visible across the entire website and that the site is accessible to everyone.
 
 ![Color Contrast Grid](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/contrast.png?raw=true)
+
+### **Typography:**
+
+I decided on using a Google font, called Montserrat, for its clean and bold look.
+![Typography](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/typography1.png?raw=true)
+
+While for the logo of the website, in the left corner, I chose a Google font called because it looks stylish and fit for the name of the website.
+![Typography](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/typography2.png?raw=true)
+
+
+## **Current Features Common to all pages**
+
+### **Header Element**
+
+* The navigation bar appears on all pages (including the 404 and 500 page).
+* In the left corner there is the logo of the website.
+* Contains links to the Home, About Us, Our Fleet, Sell Your Car, Login, Register and Contact page for quick navigation around the website. 
+* The navbar also has a hover effect, which highlights the link that the cursor is hovering on top of.
+* On mobile the navbar transforms into a togglable hamburger button.
+
+![Header](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/navbar.png?raw=true)
+
+## **Footer**
+
+* Placed at the bottom of the page, it includes useful links, account links and contact information as well as the address of the car showroom.
+* The footer includes a copyright notice at the bottom and has the same dark background as the navbar. The footer also includes a function that automatically updates the date.
+![Footer](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/navbar.png?raw=true)
