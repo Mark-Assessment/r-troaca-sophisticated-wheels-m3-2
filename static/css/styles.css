@@ -811,6 +811,13 @@ input::placeholder {
   box-shadow: 5px 5px 5px #191919;
 }
 
+.default-img {
+  background-image: url("/static/images/cars/default.png");
+  background-size:cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
 .card h3 {
   text-align: center;
 }
@@ -992,4 +999,18 @@ input::placeholder {
   .wrapper .sell-form .inputfield.terms{
     flex-direction: row;
   }
+}
+
+/* account */
+
+.no-cars {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color:#fcfafa;
+  text-shadow: 2px 2px black;
+  text-align: center;
+  margin-top:150px;
+  margin-bottom: 150px;
+  padding: 20px;
 }

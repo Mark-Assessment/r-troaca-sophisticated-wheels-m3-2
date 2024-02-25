@@ -5,6 +5,38 @@
     <div class="about-us-heading">
         <h2>{{ username }}'s Account</h2>
     </div>
+
+    {% if cars|length > 0 %}
+    <div class="cards-container">
+        {% for car in cars %}
+        <div class="card">
+            <div class="card-img default-img">
+            </div>
+            <div class="card-content">
+                <h3>{{ car.brand }}</h3>
+                <p>
+                <ul>
+                    <li>Model: {{ car.model }}</li>
+                    <li>Body Type: {{ car.body_type }}</li>
+                    <li>Year: {{ car.year }}</li>
+                    <li>Gearbox: {{ car.gearbox }}</li>
+                    <li>Fuel Type: {{ car.fuel }}</li>
+                    <li>Colour: {{ car.colour }}</li>
+                    <li>Mileage: {{ car.mileage }}</li>
+                    <li>Price Asked: {{ car.price }}</li>
+                    <li>First Name: {{ car.fname }}</li>
+                    <li>Last Name: {{ car.lname }}</li>
+                    <li>Telephone: {{ car.telephone }}</li>
+                </ul>
+                </p>
+                <a href="{{ url_for('contact') }}" aria-label="Enquire">Enquire About This Car</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p class="no-cars">There are currently no cars available.</p>
+    {% endif %}
 </section>
 
 {% endblock %}

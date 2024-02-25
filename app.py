@@ -109,8 +109,7 @@ def sell_car():
             'mileage': request.form.get('mileage'),
             'price': request.form.get('price'),
             'email': request.form.get('email'),
-            'telephone': request.form.get('telephone'),
-            'photo_link': request.form.get('photo_link')
+            'telephone': request.form.get('telephone')
         }
 
         # Insert data into MongoDB
@@ -127,8 +126,8 @@ def account():
         # grab the session user's username from db
         username = mongo.db.users.find_one(
             {"username": session["user"]})["username"]
-        cars = list(mongo.db.plants.find().sort("car", 1))
-        return render_template("account.html", username=username)
+        cars = list(mongo.db.cars.find())
+        return render_template("account.html", username=username, cars=cars)
     else:
         return render_template("login.html")
 
