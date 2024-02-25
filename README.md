@@ -26,7 +26,6 @@ Discover the epitome of automotive excellence in Leicester at Sophisticated Whee
       - [**Design Tools**](#design-tools)
       - [**Front-End**](#front-end)
       - [**Back-End**](#back-end)
-
   - [**Current Features Common to all pages**](#current-features-common-to-all-pages)
     - [**Header Element**](#header-element)
     - [**Footer**](#footer)
@@ -46,11 +45,12 @@ Discover the epitome of automotive excellence in Leicester at Sophisticated Whee
       - [**Manual Testing**](#manual-testing)
       - [**User Story Testing**](#user-story-testing)
       - [**Functionality testing**](#functionality-testing)
-      - [**Bugs and fixes**](#bugs-and-fixes)
     - [**Testing After Development**](#testing-after-development)
       - [**Validators**](#validators)
       - [***HTML*** - https://validator.w3.org/nu/](#html---httpsvalidatorw3orgnu)
       - [***CSS*** - https://jigsaw.w3.org/css-validator/](#css---httpsjigsaww3orgcss-validator)
+      - [***JSHint*** - https://jshint.com/](#jshint---httpsjshintcom)
+      - [***Python linter*** - https://pep8ci.herokuapp.com/](#pythonlinter---httpspep8ciherokuappcom)
       - [**Lighthouse Scores**](#lighthouse-scores)
   - [**Deployment**](#deployment)
   - [**Credits**](#credits)
@@ -68,7 +68,7 @@ Discover the epitome of automotive excellence in Leicester at Sophisticated Whee
 ### **User Stories:**
 
 - As a user I want to see the subject matter of the page.
-- As a new user I want to be able to view the site without logging in.
+- As a new user I want to be able to register an account.
 - As a user I want to be able to create, read, update and delete a listing of my own car.
 - As a luxury car enthusiast, I want to be able to view the fleet of high end cars available in this showroom.
 - As a mobile user, I want the website to be responsive and all the sections of the website to be easily accessible and functional on my smartphone or tablet, ensuring a seamless experience regardless of the device I'm using.
@@ -307,3 +307,185 @@ While for the logo of the website, in the left corner, I chose a Google font cal
 * Under the message displayed, there is a button that sends the user back to the Home page.
 
 ![404 Error](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/404.png?raw=true)
+
+## **Future-Enhancements**
+* Provided I would have had sufficient time, I would have added a few extra features to enhance the website's functionality. One of these would be to allow the user to upload their own image to the selling form.
+* I would also like to add a search bar at the top of the website, so the user can find a specific car that they are looking for. These enhancements would make the website more user-friendly and accesible.
+
+***
+## **Testing Phase**
+
+### **Testing During Development**
+
+During the development process, I have been constantly testing the website in the following ways:
+
+1. Manually testing each element of the page for responsiveness and accesibility via a live server opened using GitPod.
+
+2. Published the page via GitHub pages and shared with friends and family to receive feedback.
+
+3. Made use of Developer Tools from different Internet browsers, to continuously identify and troubleshoot any problems I encountered.
+
+#### **Manual Testing**
+
+**Principles:**
+
+1. **Exploratory Testing:** Manual testing is excellent for exploratory testing, where testers actively explore the application to discover unforeseen issues and usability problems.
+
+2. **User Experience (UX) Testing:** Manual testers can assess the application's user-friendliness, usability, and overall user experience, providing valuable insights.
+
+3. **Ad Hoc Testing:** In situations where test cases aren't well-defined or documented, manual testers can perform ad hoc testing to identify issues.
+
+4. **Non-Functional Testing:** Tests related to subjective criteria like aesthetics, layout, and overall look and feel are often better suited for manual testing.
+
+**When to Deploy Manual Testing:**
+
+- **Usability Testing:** To evaluate the user interface and overall user experience.
+- **Exploratory Testing:** When new features are introduced or when test cases are not yet well-defined.
+- **Complex Test Scenarios:** For intricate and multi-step test cases where human intuition is required.
+- **Non-Functional Testing:** Assessing subjective aspects like aesthetics, accessibility, and human factors.
+
+* While testing the website, I have used 4 different browsers to make sure that it is cross-compatible. The desktop browsers I have used for the tesing were:
+
+  - Firefox
+  - Google Chrome
+  - Microsoft Edge
+  - DuckDuckGo
+
+- I have also asked other people to test the website, using their personal iPhones and Macbooks using Safari, since I don't have access to these devices. To which they reported that they have not encountered any bugs.
+
+#### **Automated Testing**
+
+**Principles:**
+
+1. **Repeatability:** Automated tests can be executed repeatedly without any variation in their steps and expected outcomes.
+
+2. **Consistency:** Automated tests perform the same steps and checks each time, eliminating human errors and ensuring consistent results.
+
+3. **Efficiency:** Automated tests can run quickly and efficiently, covering a large number of test cases in a short time.
+
+4. **Regression Testing:** Automated tests are particularly useful for regression testing, where previously tested functionality is retested to ensure that new changes have not introduced defects.
+
+5. **Data-Driven Testing:** Automation allows for data-driven testing, where tests are executed with different sets of data to verify various scenarios.
+
+6. **Continuous Integration/Continuous Deployment (CI/CD):** Automated tests can be integrated into the CI/CD pipeline, allowing for immediate feedback on code changes and ensuring that only high-quality code is deployed.
+
+**When to Deploy Automated Testing:**
+
+- **Regression Testing:** Automated tests are ideal for regularly checking existing functionality after code changes.
+- **Highly Repetitive Tests:** Tasks like data validation, login/logout procedures, and API testing can be automated for efficiency.
+- **Load and Performance Testing:** Automated tools can simulate a large number of users to test system performance under heavy loads.
+- **Cross-Browser and Cross-Platform Testing:** Automated frameworks can be used to test web applications on different browsers and platforms.
+
+Automated testing can be a powerful tool for catching bugs early on and ensuring that the application is working as expected. While I fully acknowledge the benefits of automated testing and the value it adds to the overall development process, due to time constraints, implementing and maintaining Jest for automated testing was not possible.
+
+#### **User Story Testing**
+
+During my manual testing, I have tested every user story, to ensure that the needs of the users are met.
+
+- As a user I want to see the subject matter of the page.
+  - Issue: there was no description of what the page is on the landing page.
+  - Resolution: I added a brief but comprehensive description of what you can find in the showroom.
+
+![Home section1](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/section1.png?raw=true)
+
+![Home section2](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/section2.png?raw=true)
+
+![Home section3](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/section3.png?raw=true)
+
+- As a new user I want to be able to register an account.
+  - Issue: the user had to be registered to be able to sell their own luxury car.
+  - Resolution: added a Register page and registration form.
+  
+![Register](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/register.png?raw=true)
+
+- As a user I want to be able to create, read, update and delete a listing of my own car.
+  - Issue: the user could not list a car to sell.
+  - Resolution: added the Register page so they can register an account, added the Sell Your Car page where users with a registered account could create their own listing. In the Account page the user is able to view his own listing and they are able to edit the listing as well as delete it, whenever they want.
+
+![Sell Your Car section2](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/sell2.png?raw=true)
+
+![Account section2](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/account2.png?raw=true)
+
+- As a luxury car enthusiast, I want to be able to view the fleet of high end cars available in this showroom.
+  - Issue: the user could not find the available cars on the landing page.
+  - Resolution: added the Our Fleet page, where users can see what the showroom has in stock.
+
+![Our Fleet section1](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/fleet1.png?raw=true)
+
+![Our Fleet section2](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/fleet2.png?raw=true)
+  
+- As a mobile user, I want the website to be responsive and all the sections of the website to be easily accessible and functional on my smartphone or tablet, ensuring a seamless experience regardless of the device I'm using.
+  - Issue: the user could not see some of the pages properly.
+  - Resolution: I modified some of the CSS rules, as to ensure that it is responsive on all devices.
+
+![Mobile](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/mobile1.png?raw=true)
+
+![Mobile](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/mobile2.png?raw=true)
+
+![Mobile](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/mobile3.png?raw=true)
+
+#### **Functionality testing**
+
+- Tested on Samsung Galaxy S24 Ultra
+
+| Home page |Result|Comments|
+|-------|-------|-------|
+|Website loads fully|Pass|No delay encountered|
+|Layout appearance is correct (visibility of text, all images load, no overlaps)|Pass|N/A|
+|Hovering over each link has the desired response from the navbar|Pass|N/A|
+|Input fields work correctly, validate and accept data|Pass|N/A|
+|Home takes the user to the Home page as expected|Pass|N/A|
+|About Us takes the user to the About Us page as expected|Pass|N/A|
+|Sell Your Car takes the user to the Sell Your Car page as expected|Pass|N/A|
+|Account takes the user to the Account page as expected|Pass|N/A|
+|Login takes the user to the Login page as expected|Pass|N/A|
+|Register takes the user to the Register page as expected|Pass|N/A|
+|Contact takes the user to the Contact page as expected|Pass|N/A|
+
+- Tested on desktop
+
+| Home page |Result|Comments|
+|-------|-------|-------|
+|Website loads fully|Pass|No delay encountered|
+|Layout appearance is correct (visibility of text, all images load, no overlaps)|Pass|N/A|
+|Hovering over each link has the desired response from the navbar|Pass|N/A|
+|Input fields work correctly, validate and accept data|Pass|N/A|
+|Home takes the user to the Home page as expected|Pass|N/A|
+|About Us takes the user to the About Us page as expected|Pass|N/A|
+|Sell Your Car takes the user to the Sell Your Car page as expected|Pass|N/A|
+|Account takes the user to the Account page as expected|Pass|N/A|
+|Login takes the user to the Login page as expected|Pass|N/A|
+|Register takes the user to the Register page as expected|Pass|N/A|
+|Contact takes the user to the Contact page as expected|Pass|N/A|
+
+* All the links, buttons and forms work as expected, with no errors.
+
+### **Testing After Development**
+
+#### **Validators**
+
+#### ***HTML*** - <https://validator.w3.org/nu/>
+
+- All pages return no error.
+
+#### ***CSS*** - <https://jigsaw.w3.org/css-validator/>
+
+- All pages tested, no issues found.
+- CSS validator errors due to aos.css, this is out of my control and an issue with the resource.
+![CSS validator badge](https://jigsaw.w3.org/css-validator/images/vcss)
+
+#### ***JSHint*** - <https://jshint.com/>
+
+![JSHint results](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/jshint.png?raw=true)
+
+#### [***Python linter*** - <https://pep8ci.herokuapp.com/>
+
+![Python linter results](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/pep8compliance.png?raw=true)
+
+#### **Lighthouse Scores**
+
+- All lighthouse tests have been made while in incognito mode to avoid any browser extensions interference.
+- I have asked several people to run lighthouse tests from their own devices as well, and they were getting similar scores.
+
+![Index.html lighthouse score]()
+***
