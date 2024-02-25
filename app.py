@@ -119,6 +119,34 @@ def sell_car():
     return render_template("sell_car.html")
 
 
+@app.route ("/edit_car/<car_id>", methods=["GET", "POST"])
+def edit_car(car_id):
+    car = mongo.db.cars.find_one({"_id": ObjectId(car_id)})
+    if request.method == 'POST':
+        cars = mongo.db.cars
+        submit = {
+            'fname': request.form.get('fname'),
+            'lname': request.form.get('lname'),
+            'brand': request.form.get('brand'),
+            'model': request.form.get('model'),
+            'body_type': request.form.get('body_type'),
+            'year': request.form.get('year'),
+            'fuel': request.form.get('fuel'),
+            'colour': request.form.get('colour'),
+            'mileage': request.form.get('mileage'),
+            'price': request.form.get('price'),
+            'email': request.form.get('email'),
+            'telephone': request.form.get('telephone')
+        }
+
+        # Insert data into MongoDB
+        cars.update({"_id": ObjectId(car_id)}, submit)
+
+        return redirect(url_for('account'))
+    return render_template("sell_car.html", car=car)
+
+
+
 @app.route("/account", methods=["GET", "POST"])
 def account():
     # check if "user" key is in the session

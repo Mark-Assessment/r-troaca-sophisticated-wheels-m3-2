@@ -29,7 +29,7 @@
                     <li>Telephone: {{ car.telephone }}</li>
                 </ul>
                 </p>
-                <a href="{{ url_for('contact') }}" aria-label="Enquire">Enquire About This Car</a>
+                <a href="{{ url_for('edit_car', car_id=car_id) }}" aria-label="Edit">Edit</a>
             </div>
         </div>
         {% endfor %}
