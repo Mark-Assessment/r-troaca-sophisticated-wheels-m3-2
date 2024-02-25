@@ -157,10 +157,60 @@ I also created this color contrast grid using [https://contrast-grid.eightshapes
 ### **Typography:**
 
 I decided on using a Google font, called Montserrat, for its clean and bold look.
+
 ![Typography](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/typography1.png?raw=true)
 
 While for the logo of the website, in the left corner, I chose a Google font called because it looks stylish and fit for the name of the website.
+
 ![Typography](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/typography2.png?raw=true)
+
+### **Technologies Used:**
+
+* Cloud developer platform from [Gitpod](https://www.gitpod.io/).
+* IDE integrated into Gitpod from [Visual Studio Code](https://code.visualstudio.com/).
+* Debugging assisted by [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/).
+* Version control integrated into Gitpod from [Git](https://git-scm.com/).
+
+### **Design Tools:**
+
+* Icon library and toolkit from [Font Awesome 5](https://fontawesome.com/).
+* Favicon created on [favicon.cc](https://www.favicon.cc/).
+* Showcasing the site on different devices by [Bytes](https://ui.dev/amiresponsive)
+* Paint from [Microsoft](https://apps.microsoft.com/store/detail/paint/9PCFS5B6T72H?hl=en-us&gl=us)
+* Flowchart by [diagrams.net/draw.io](https://www.diagrams.net/)
+* AI created car pictures from [Microsoft Copilot](https://create.microsoft.com/en-us/features/ai-image-generator)
+
+### **Front-End:**
+
+- ![HTML5](https://img.shields.io/static/v1?label=HTML&message=5&color=E34F26&logo=html5&logoColor=ffffff)
+    - [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) as the base for markup text.
+- ![CSS3](https://img.shields.io/static/v1?label=CSS&message=3&color=1572B6&logo=css3&logoColor=ffffff)
+    - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) for custom styling the site.
+- ![Javascript](https://img.shields.io/badge/logo-javascript-blue?logo=javascript&logoColor=f5f5f5)
+    - [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) for JavaScript functionality.
+
+### **Back-End:**
+
+- ![Python](https://img.shields.io/static/v1?label=Python&message=3.12.2&color=blue&logo=python&logoColor=ffffff)
+    - [Python 3.12.2](https://www.python.org/) is a high-level, general-purpose programming language.
+- ![Flask](https://img.shields.io/static/v1?label=Flask&message=3.0.2&color=yellow&logo=flask)
+    - [Flask 3.0.2](https://flask.palletsprojects.com/en/3.0.x/) is a micro web framework written in Python.
+- ![Jinja](https://img.shields.io/static/v1?label=Jinja&message=2&color=E34F26&logo=jinja)
+    - [Jinja2](https://palletsprojects.com/p/jinja/) for templating with Flask.
+- ![Werkzeug](https://img.shields.io/static/v1?label=Werkzeug&message=2.3.x&color=orange&logo=werkzeug)
+    - [Werkzeug 2.3.x](https://werkzeug.palletsprojects.com/en/2.3.x/) for password hashing, authentication and authorisation.
+- ![Heroku](https://img.shields.io/static/v1?label=Heroku&message=PaaS&color=430098&logo=heroku)
+    - [Heroku](https://www.heroku.com) is used as *"Platform as a Service"* (PaaS) for app hosting.
+- ![MongoDB](https://img.shields.io/static/v1?label=MongoDB&message=6.0&color=brightgreen&logo=mongodb&logoColor=ffffff)
+    - [MongoDB Atlas 6.0](https://www.mongodb.com/atlas) is used as a non-relational database plugin via Heroku.
+
+### **Validation and Evaluation:**
+
+* HTML validation from [W3C](https://validator.w3.org/#validate_by_input).
+* CSS validation from [Jigsaw (W3C)](https://jigsaw.w3.org/css-validator/).
+* Python validation from [CI Python Linter](https://pep8ci.herokuapp.com/).
+* Javascript validation from [JSHint](https://jshint.com/).
+* Web page quality improvements assisted by [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
 
 
 ## **Current Features Common to all pages**
@@ -179,4 +229,5 @@ While for the logo of the website, in the left corner, I chose a Google font cal
 
 * Placed at the bottom of the page, it includes useful links, account links and contact information as well as the address of the car showroom.
 * The footer includes a copyright notice at the bottom and has the same dark background as the navbar. The footer also includes a function that automatically updates the date.
-![Footer](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/navbar.png?raw=true)
+
+![Footer](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/footer.png?raw=true)
