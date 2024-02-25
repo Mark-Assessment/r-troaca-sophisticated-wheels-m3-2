@@ -1,6 +1,7 @@
 import os
 from flask import (
-    Flask, render_template, request, flash, redirect, request, session, url_for)
+    Flask, render_template, request, flash, redirect, request, session, url_for
+    )
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -14,6 +15,7 @@ app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 
 mongo = PyMongo(app)
+
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
@@ -40,7 +42,6 @@ def register():
     return render_template("register.html")
 
 
-
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -52,8 +53,8 @@ def login():
             # ensure hashed password matches user input
             if check_password_hash(
                     existing_user["password"], request.form.get("password")):
-                        session["user"] = request.form.get("username").lower()
-                        return redirect(url_for(
+                session["user"] = request.form.get("username").lower()
+                return redirect(url_for(
                             "account", username=session["user"]))
             else:
                 # invalid password match
@@ -119,7 +120,7 @@ def sell_car():
     return render_template("sell_car.html")
 
 
-@app.route ("/edit_car/<car_id>", methods=["GET", "POST"])
+@app.route("/edit_car/<car_id>", methods=["GET", "POST"])
 def edit_car(car_id):
     car = mongo.db.cars.find_one({"_id": ObjectId(car_id)})
     if request.method == 'POST':
@@ -168,8 +169,8 @@ def account():
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
     if request.method == "POST":
-        flash (
-            "Thank you for contacting us! We have received your enquiry.".format(
+        flash(
+            "Thank you! We have received your enquiry.".format(
                 request.form.get("name")))
     return render_template("contact.html")
 
