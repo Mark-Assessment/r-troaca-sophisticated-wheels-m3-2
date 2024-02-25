@@ -19,6 +19,7 @@ Discover the epitome of automotive excellence in Leicester at Sophisticated Whee
     - [**User Stories:**](#user-stories)
     - [**Site Aims:**](#site-aims)
     - [**How Will This Be Achieved:**](#how-will-this-be-achieved)
+    - [**Design:**](#design)
     - [**Wireframes:**](#wireframes)
     - [**Color Scheme:**](#color-scheme)
     - [**Typography:**](#typography)
@@ -88,6 +89,15 @@ Discover the epitome of automotive excellence in Leicester at Sophisticated Whee
 - The site provides the user a form to register and login, so that they can sell their private luxury car.
 - The users are able to create their own listing and it will be displayed in their account, where they can update their listing or delete it whenever they decide.
 - The users are able to contact the showroom through a form where they can send a message or if they prefer, there is a email adress displayed as well as a phone number.
+
+### **Design:**
+ * Below is the schema design for the database that will hold and handle Users and the non-relational database handled by MongoDB which uses primary and foreign keys from each table in order to relate entries to eachother.
+
+![Schema design](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/dbschema.png?raw=true)
+
+ * And this is the flowchart of the website.
+
+ ![Flowchart](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/flowchart.png?raw=true)
 
 ### **Wireframes:**
 
@@ -487,7 +497,7 @@ During my manual testing, I have tested every user story, to ensure that the nee
 - All lighthouse tests have been made while in incognito mode to avoid any browser extensions interference.
 - I have asked several people to run lighthouse tests from their own devices as well, and they were getting similar scores.
 
-![Index.html lighthouse score]((https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/lighthouse.png?raw=true))
+![ Lighthouse score](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/lighthouse.png?raw=true)
 ***
 
 ## **Deployment**
@@ -595,7 +605,7 @@ Markdown Cheatsheet from [Adam Pritchard](https://github.com/adam-p/markdown-her
 
 ### **Content:**
 
-Background from [Jan Kroon](https://www.pexels.com/photo/grayscale-photo-of-road-1038935/ on Pexels
+Background from [Jan Kroon](https://www.pexels.com/photo/grayscale-photo-of-road-1038935/) on Pexels
 
 Animation from [Michal Snik](https://michalsnik.github.io/aos/)
 
