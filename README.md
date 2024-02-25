@@ -264,7 +264,46 @@ While for the logo of the website, in the left corner, I chose a Google font cal
 ### **Sell Your Car Page Content:**
 * If the user is not logged in, the page will display a message that informs the user that they need to be logged in to be able to sell a car or to register if he has not done that previously.
   
-![Our Fleet section1](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/sell1.png?raw=true)
+![Sell Your Car section1](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/sell1.png?raw=true)
 
-*If the user is logged in, a selling form is being displayed.
-![Our Fleet section2](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/sell2.png?raw=true)
+* If the user is logged in, a selling form is being displayed.
+![Sell Your Car section2](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/sell2.png?raw=true)
+
+### **Account Page Content:**
+* If the user is not logged in, the page will display the login page.
+  
+![Account section1](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/login.png?raw=true)
+
+* If the user is logged in, but has no selling forms the page will display a message that informs the user there are no cars available.
+
+![Account section2](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/account1.png?raw=true)
+
+* If the user is logged in and has previously filled a selling form, the car will display in the users account.
+
+![Account section2](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/account2.png?raw=true)
+
+### **Login Page Content:**
+* The page displays a form for the user to login.
+
+![Login](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/login.png?raw=true)
+
+### **Register Page Content:**
+* The page displays a form for the user to register a new account.
+
+![Register](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/register.png?raw=true)
+
+### **Contact Page Content:**
+* At the top of the page there is a heading that contains the title of the page and a short paragraph where the user is informed that they can feel free to contact the showroom in any manner displayed.
+* The user is offered several possibilities to contact the venue. By contact form, email or mobile phone. The address of the showroom is also displayed on this page.
+* The contact form has 3 required fields and a submit button:
+    * The first field requires the user to input their name.
+    * The second field requires the email address of the user.
+    * The third field has a required text area, in which the user can input their questions to the showroom, feedback or whatever they choose.
+
+![Contact](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/contact.png?raw=true)
+
+### **404 Error Page Content**
+* The page displays a message to inform the user that the page that they were looking for is unavailable.
+* Under the message displayed, there is a button that sends the user back to the Home page.
+
+![404 Error](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/documentation/404.png?raw=true)
