@@ -104,54 +104,54 @@ Discover the epitome of automotive excellence in Leicester at Sophisticated Whee
 - Mobile Wireframes:
   - Home page
 
-![Home page]()
+![Home page](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/wireframes/homemobile.jpg?raw=true)
   - About Us page
   
-![About Us]()
+![About Us](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/wireframes/aboutmobile.jpg?raw=true)
   - Our Fleet page
   
-![Our Fleet page]()
+![Our Fleet page](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/wireframes/fleetmobile.jpg?raw=true)
   - Sell Your Car page
   
-![Sell Your Car page]()
+![Sell Your Car page](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/wireframes/sellmobile.jpg?raw=true)
   - Account page
   
-![Account page]()
+![Account page](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/wireframes/accountmobile.jpg?raw=true)
   - Contact page
   
-![Contact page]()
+![Contact page](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/wireframes/contactmobile.jpg?raw=true)
   - Login page
   
-![Login page]()
+![Login page](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/wireframes/loginmobile.jpg?raw=true)
   - Register page
   
-![Register page]()
+![Register page](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/wireframes/registermobile.jpg?raw=true)
 
 - Desktop Wireframes:
   - Home page
 
-![Home page]()
+![Home page](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/wireframes/homedesktop.jpg?raw=true)
   - About Us page
   
-![About Us]()
+![About Us](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/wireframes/aboutdesktop.jpg?raw=true)
   - Our Fleet page
   
-![Our Fleet page]()
+![Our Fleet page](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/wireframes/fleetdesktop.jpg?raw=true)
   - Sell Your Car page
   
-![Sell Your Car page]()
+![Sell Your Car page](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/wireframes/selldesktop.jpg?raw=true)
   - Account page
   
-![Account page]()
+![Account page](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/wireframes/accountdesktop.jpg?raw=true)
   - Contact page
   
-![Contact page]()
+![Contact page](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/wireframes/contactdesktop.jpg?raw=true)
   - Login page
   
-![Login page]()
+![Login page](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/wireframes/logindesktop.jpg?raw=true)
   - Register page
   
-![Register page]()
+![Register page](https://github.com/RazvanTr10/Sophisticated-Wheels/blob/main/static/images/wireframes/registerdesktop.jpg?raw=true)
 
 ### **Color Scheme:**
 

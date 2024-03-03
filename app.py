@@ -97,8 +97,14 @@ def sell_car():
     Returns Sell Your Car page and sends the form to the database when posted.
     """
     if request.method == 'POST':
+        # Get the user's username and user_id from the session
+        username = session["user"]
+        user_data = mongo.db.users.find_one({"username": username})
+        user_id = user_data["_id"]
+
         cars = mongo.db.cars
         car = {
+            'user_id': user_id,
             'fname': request.form.get('fname'),
             'lname': request.form.get('lname'),
             'brand': request.form.get('brand'),
@@ -158,10 +164,17 @@ def account():
     # check if "user" key is in the session
     if "user" in session:
         # grab the session user's username from db
-        username = mongo.db.users.find_one(
-            {"username": session["user"]})["username"]
-        cars = list(mongo.db.cars.find())
-        return render_template("account.html", username=username, cars=cars)
+        username = session["user"]
+        user_data = mongo.db.users.find_one({"username": username})
+
+        if user_data:
+            user_id = user_data["_id"]
+            # Fetch only the car listings associated with the current user
+            cars = list(mongo.db.cars.find({"user_id": user_id}))
+            return render_template("account.html", username=username, cars=cars)
+        else:
+            # Handle the case where the user is not found
+            abort(404)
     else:
         return render_template("login.html")
 
